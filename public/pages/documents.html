@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../src/styles/documents.css">
+    <link rel="stylesheet" href="../../src/styles/bootstrap.min.css">
+
+    <script type="module">
+        import AppHeader from '../../src/components/AppHeader.js';
+        customElements.define('app-header', AppHeader);
+    </script>
+</head>
+
+<body>
+    
+    <app-header 
+    logo="../logo.png"
+    icons="../../src/fonts"
+    accueil="../"
+    href1="../index.html"
+    href2="services.html"
+    href3="specialites.html"
+    href4="#"
+    href5="contacts.html"
+    active="documents"
+    ></app-header>
+
+    <div class="container-fluid">
+        <div class="container">
+         <div class="mt-4">
+            <div class="text-center mt-4 text-bold">
+                <p>Vous pourriez télécharger des documents nécessaires pour certaines procédures <br> comme les examens et les prises de rendez-vous directement sur cette <br> plateforme</p>
+                
+            </div>
+           <div>
+            <div class="text-center">
+                <h3 class="text-bold">Télécharger les procédures d'examinations</h3>
+            </div>
+            <div class="bor m-auto">
+                
+                <div class="text-center">
+                    <img src="../../src/images/examination.png" alt="">
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success"><a class="text-white text-bold text-decoration-none" href="">Télécharger</a></button>
+                </div>
+            </div> <br> 
+           </div>
+         </div>
+         <div>
+            <div class="text-center ">
+                <h3 class="text-bold mt-2 mb-2">Télécharger les procédures de prise de <br> rendez-vous</h3>
+            </div><br>
+            <div class="bor m-auto">
+                
+                <div class="text-center">
+                    <img src="../../src/images/rendezvous.png" alt="">
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success"><a class="text-white text-bold text-decoration-none" href="">Télécharger</a></button>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 py-5">
+        <hr />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../logo.png" alt="Hallo Docteur" id="logo">
+                    <div class="medias d-flex mt-4 mx-auto">
+                        <a href="https://m.facebook.com/HALLO-Docteur-102558741791085/"><img src="../../src/fonts/facebook.svg" alt="Facebook" class="ml-4 media-icon"></a>
+                        <a href="#"><img src="../../src/fonts/twitter.svg" alt="Twitter" class="ml-4 media-icon"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <h2 class="ml-5">Services</h2>
+                    <ul class="mt-3">
+                        <li>
+                            <a href="#"><img src="../../src/fonts/arrow.png">Traumotologie</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../../src/fonts/arrow.png">Gynécologie</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../../src/fonts/arrow.png">Pédiatrie</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../../src/fonts/arrow.png">Cardiologie</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <h2 class="ml-5">Contacts</h2>
+                    <ul class="mt-3">
+                        <li><img src="../../src/fonts/call.png" class="contact-icon"><span>+226 70047327/68021741</span></li>
+                        <li><img src="../../src/fonts/location_pin.png" class="contact-icon"><span>01 BP 717 Ouagadougou 01 (BF)</span></li>
+                        <li><img src="../../src/fonts/email.png" class="contact-icon"><span>hallodocteur.sante@gmail.com</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

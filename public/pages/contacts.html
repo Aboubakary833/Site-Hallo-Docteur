@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../../src/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../../src/styles/styles.css">
+    <script type="module">
+        import AppHeader from '../../src/components/AppHeader.js';
+        customElements.define('app-header', AppHeader);
+    </script>
+    <style type="text/css">
+    /*Debut du style pour footer*/
+
+    footer {color: #80b14dff;}
+    footer ul li {
+        list-style: none;
+        line-height: 2.5rem;
+    }
+    footer ul li a {
+        font-size: 18px;
+        font-weight: bolder;
+        color: #80b14dff;
+    }
+    footer ul li a img {
+        width: 27px;
+        height: 27px;
+    }
+    footer ul li .contact-icon{
+        width: 45px;
+        height: 45px;
+    }
+    .btn{
+        font-weight: bolder;
+        color: #fff;
+        background: #80b14dff;
+    }
+
+    /*Debut du style pour footer*/
+    #map{
+        width: 100%;
+        height: 600px;
+    }
+    @media(max-width: 645px) {
+        #map {
+            width: 100%;
+            height: 300px;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <app-header 
+    logo="../logo.png"
+    icons="../../src/fonts"
+    accueil="../"
+    href1="../index.html"
+    href2="services.html"
+    href3="specialites.html"
+    href4="documents.html"
+    href5="#"
+    active="contacts"
+    ></app-header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-8 mt-4 mx-auto">
+                <h1 class=" mt-3 text-center">Laissez-nous un mail</h1>
+                <form class="text-center" method="POST" action="#">
+                    <div class="form-group mt-5">
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="votre email">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="6" placeholder="Message..."></textarea>
+                    </div>
+                    <input class="btn px-4 py-2 text-center" type="submit" value="Envoyer">
+                  </form>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3897.096633476679!2d-1.5025867731835663!3d12.3764589884417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m1!1m0!5e0!3m2!1sfr!2sbf!4v1609409805062!5m2!1sfr!2sbf" frameborder="0" allowfullscreen="" id="map" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    
+    <footer class="mt-5 py-5">
+        <hr />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../logo.png" alt="Hallo Docteur" id="logo">
+                    <div class="medias d-flex mt-4 mx-auto">
+                        <a href="#"><img src="../../src/fonts/facebook.svg" alt="Facebook" class="ml-4 media-icon"></a>
+                        <a href="#"><img src="../../src/fonts/twitter.svg" alt="Twitter" class="ml-4 media-icon"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <h2 class="ml-5">Services</h2>
+                    <ul class="mt-3">
+                        <li>
+                            <a href="#"><img src="../../src/fonts/arrow.png">Traumotologie</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../../src/fonts/arrow.png">Gynécologie</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../../src/fonts/arrow.png">Pédiatrie</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../../src/fonts/arrow.png">Cardiologie</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <h2 class="ml-5">Contacts</h2>
+                    <ul class="mt-3">
+                        <li><img src="../../src/fonts/call.png" class="contact-icon"><span>+226 70047327/68021741</span></li>
+                        <li><img src="../../src/fonts/location_pin.png" class="contact-icon"><span>01 BP 717 Ouagadougou 01 (BF)</span></li>
+                        <li><img src="../../src/fonts/email.png" class="contact-icon"><span>hallodocteur.sante@gmail.com</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

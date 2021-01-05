@@ -1,0 +1,275 @@
+#logo{
+    width: 150px;
+    height: 150px;
+}
+.header-icon{
+    width: 80px;
+    height: 80px;
+    min-width: 50px;
+}
+.titles_block > span{
+    font-size: 1em;
+    font-weight: bolder;
+}
+.titles_block > .sub_title{
+    font-size: 14px;
+    font-weight: normal;
+}
+.nav-block{
+    border-top: 1.5px solid #ddd;
+    border-bottom: 1.5px solid #ddd;
+}
+.searchbar{
+    width: auto;
+    height: 50px;
+    border-left: 1.5px solid #ddd;
+    border-right: 1.5px solid #ddd;
+}
+.searchbar > input{
+    border: none;
+    outline: none;
+    text-indent: 10px;
+}
+.searchbar > button{
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: none;
+    margin-right: 10px;
+}
+.searchbar > button > img{
+    width: 27px;
+    height: 27px;
+}
+.media-icon{
+    width: 30px;
+    height: 30px;
+}
+@media(min-width: 992px) and (max-width: 1199px) {
+    #logo{
+    width: 125px;
+    height: 125px;
+}
+    .titles_block > span{
+    font-size: 14px;
+    font-weight: bolder;
+}
+    .header-icon{
+    width: 83px;
+    height: 70px;
+}
+}
+@media(min-width: 768px) and (max-width: 992px) {
+#logo{
+    width: 125px;
+    height: 125px;
+}
+.titles_block > span{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.titles_block > .sub_title{display: none;}
+    .header-icon{
+    width: 70px;
+    height: 65px;
+}
+.searchbar > button > img{
+    width: 20px;
+    height: 20px;
+}
+.medias{display: none;}
+}
+@media(max-width: 767px) {
+#logo{
+    width: 100px;
+    height: 100px;
+}
+.medias{display: none;}
+.searchbar{display: none;}
+.titles_block > span{
+    font-size: 12px;
+    font-weight: bolder;
+}
+.titles_block > .sub_title{display: none;}
+    .header-icon{
+    width: 50px;
+    height: 50px;
+}
+}
+@media(max-width: 396px) {
+#logo{
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+}
+.titles_block > span{
+    font-size: 10px;
+    font-weight: bolder;
+}
+.header-icon{
+    width: 35px;
+    height: 40px;
+}
+} /* fin de header*/
+
+.services{
+    width: 100%;
+    height: 100px;
+    background-color: #80b14dff;
+}
+.service .aa{
+    text-decoration: none;
+    
+}
+.service span #a{
+    opacity: 50%;
+}
+.hauteur{
+    height: 480px;
+}
+.bloc2{
+    background-color: #FEFEFE;
+    width: 100%;
+    height: auto;
+}
+.bloc20{
+   
+    width: 40%;
+    height: 450px;
+}
+.bloc21{
+    
+    width: 40%;
+    height: 450px;
+}
+.bloc20 img{
+    width: 70%;
+    height: 200px;
+}
+.bloc20 .green{
+    width: 70%;
+    height: 200px;
+    background-color: #80b14dff;
+    
+}
+.bloc20 .green1{
+    width: 80%;
+    height: 40px;
+    background-color: rgb(250, 94, 3);
+    
+}
+.bloc21 .ron{
+    border-radius: 100px ;
+    width: 180px;
+    height: 180px;
+    border: 2px solid rgb(255, 115, 0);
+}
+.bloc21 .ron img{
+    width: 120px;
+    height: 120px;
+}
+.bloc21 .tex{
+    
+    width: 90%;
+    height: 220px;
+}
+.bloc3{
+    background-color: #FEFEFE;
+    width: 100%;
+    height: auto;
+}
+.chef{
+    border-bottom: 4px solid #80b14dff;
+    width: 400px;
+    margin: auto;
+}
+.imga img{
+    width: 100%;
+}
+@media (max-width:900px){
+    .imga img{
+        width: 100%;
+    }
+    .green .green12{
+        font-size: 13px;
+    }
+    .chef{
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    .chef h2{
+        font-size: 11px;
+    }
+   
+}
+@media (max-width:440px){
+    .bloc21 .tex{
+        font-size: 10px;
+        height: auto;
+    }
+}
+@media (max-width:768px){
+    .carou{
+        height: auto;
+    }
+}
+
+
+
+
+
+@media  (min-width:750px) and (max-width:995px){
+    .bloc21 .tex{
+        font-size: 12px;
+    }
+    .green .green12{
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+@media  (min-width:750px) and (max-width:995px){
+    .green .green12{
+        font-size: 11px;
+    }
+}
+
+
+ /*Debut du style pour footer*/
+
+ footer {color: #80b14dff;}
+ footer ul li {
+     list-style: none;
+     line-height: 2.5rem;
+ }
+ footer ul li a {
+     font-size: 18px;
+     font-weight: bolder;
+     color: #80b14dff;
+ }
+ footer ul li a img {
+     width: 27px;
+     height: 27px;
+ }
+ footer ul li .contact-icon{
+     width: 45px;
+     height: 45px;
+ }
+ .btn{
+     font-weight: bolder;
+     color: #fff;
+     background: #80b14dff;
+ }
+ [class*="element"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+.showEl{
+    opacity: 1;
+    transform: translateY(0px);
+}

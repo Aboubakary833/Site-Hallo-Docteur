@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="theme-color" content="#80b14dff">
+    <meta name="author" content="Souleymane SILGA, Aboubakary CISSE & Alain GUIGMA">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../src/styles/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../src/styles/styles.css" type="text/css">
+    <script type="module">
+        import AppHeader from '../src/components/AppHeader.js';
+        customElements.define('app-header', AppHeader);
+    </script>
+    <style type="text/css">
+.hpm-img {
+    width: 100%;
+    height: auto;
+}
+.hpm-heading {transform: translate(25%, -350%);}
+.hpm-heading > span {
+    font-size: 50px;
+    font-weight: bolder;
+}
+.hpm-heading > span:last-of-type {color: #80b14dff;}
+.hpm-text {
+    font-size: 21px;
+    font-weight: bolder;
+    transform: translate(-80%, -280%)
+}
+.heading > span {
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 75px;
+    border-bottom: 5px solid #80b14dff;
+}
+.card-icon{
+    width: fit-content;
+    height: fit-content;
+    transform: translateY(-30px);
+    margin: 0 auto;
+    padding: 10px;
+    background: #80b14dff;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.card-icon > img {
+    width: 35px;
+    height: 35px;
+}
+.part1, .part2 {
+    width: 50%;
+    height: 250px;
+    background: #80b14dff;
+}
+.part1, .part2 > h1, h3 { color: #fff;}
+.part1 > h1 {margin-top: 75px;}
+.part2 > h1 {margin-top: 75px;}
+footer {color: #80b14dff;}
+    footer ul li {
+        list-style: none;
+        line-height: 2.5rem;
+    }
+    footer ul li a {
+        font-size: 18px;
+        font-weight: bolder;
+        color: #80b14dff;
+    }
+    footer ul li a img {
+        width: 27px;
+        height: 27px;
+    }
+    footer ul li .contact-icon{
+        width: 45px;
+        height: 45px;
+    }
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hpm-heading {
+    top: 45%;
+    left: 15%;
+}
+.hpm-heading > span {font-size: 40px;}
+.hpm-text {
+    top: 65%;
+    left: 17%;
+    font-size: 17px;
+    font-weight: bolder;
+ }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+.hpm-heading {
+    top: 35%;
+    left: 13%;
+}
+.hpm-heading > span {font-size: 30px;}
+.hpm-text {
+    top: 50%;
+    left: 15%;
+    font-size: 14px;
+    font-weight: bolder;
+ }
+}
+@media(max-width: 614px) {
+.hpm-heading > span {font-size: 20px;}
+.hpm-heading {display: none;}
+.hpm-text{display: none;}
+}
+[class*="element"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+.showEl{
+    opacity: 1;
+    transform: translateY(0px);
+}
+    </style>
+</head>
+<body>
+    
+    <app-header 
+    logo="logo.png"
+    icons="../src/fonts"
+    accueil="../"
+    href1="#"
+    href2="pages/services.html"
+    href3="pages/specialites.html"
+    href4="pages/documents.html"
+    href5="pages/contacts.html"
+    active="accueil"
+    ></app-header>
+
+    <div class="container mb-5">
+
+        <div class="row element">
+            <img src="../src/images/doctor_in_green.jpg" alt="Image d'un médécin" class="hpm-img">
+            <div class="d-none d-md-block hpm-heading">
+                <span class="element">Clinique</span><br>
+                <span class="element">&nbsp;&nbsp;&nbsp;Hallo Docteur</span>
+            </div>
+            <p class="d-none d-md-block hpm-text">Nous offrons différents types<br> de service dans notre locale <br>comme à domicile.</p>
+        </div>
+        <div class="row mt-5 heading element">
+            <span class="mx-auto">Ce que nous offrons</span>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card mt-5 mt-md-0 element">
+                    <img src="../src/images/baby_examination.jpg" class="card-img-top" alt="Examination d'un enfant">
+                    <div class="card-icon">
+                        <img src="../src/fonts/child.png" alt="Icône d'enfant">
+                    </div>
+                    <div class="card-body text-center mt-2">
+                      <h4 class="card-title">Pédiatrie</h4>
+                      <p class="card-text font-weight-bolder">Le service pédiatrique de la clinique Hallo Docteur traite les pathologies de l'enfant jusqu'à 16 ans.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-5 mt-md-0 element">
+                    <img src="../src/images/femal_dentist.png" class="card-img-top card-img" alt="Dentiste">
+                    <div class="card-icon">
+                        <img src="../src/fonts/tooth.png" alt="Icône de dent">
+                    </div>
+                    <div class="card-body text-center mt-2">
+                      <h4 class="card-title">Chirurgie dentaire</h4>
+                      <p class="card-text font-weight-bolder">La clinique a dans son local des dentistes offrant des soins contre les pathologies dentaires.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-5 mt-md-0 element">
+                    <img src="../src/images/exam.jpg" class="card-img-top card-img" alt="Cardiologues">
+                    <div class="card-icon">
+                        <img src="../src/fonts/heartbeat.png" alt="Icône coeur">
+                    </div>
+                    <div class="card-body text-center mt-2">
+                      <h4 class="card-title">Chirurgie dentaire</h4>
+                      <p class="card-text font-weight-bolder">La clinique a dans son local des dentistes offrant des soins contre les pathologies dentaires.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-5 heading element">
+            <span class="mx-auto">Nos horaires</span>
+        </div>
+        <div class="row schedule mt-4 element">
+            <div class="col-12 col-md-8 d-flex mx-auto frame">
+                <div class="part1 text-center">
+                    <h3 class="mt-5">Du Lundi au Samedi</h3>
+                    <h1>24H/24H</h1>
+                </div>
+                <div class="part2 text-center">
+                    <h3 class="mt-5">Les Dimanches</h3>
+                    <h1>06H-22H</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 heading element">
+            <span class="mx-auto">La Clinique</span>
+        </div>
+        <div class="row mt-4 element">
+            <p class="text-center font-weight-bolder mx-auto">Nous mettrons tout en oeuvre pour que votre hospitalisation<br /> se déroule dans de meilleures conditions en vous<br /> apportant toute l'aide,l'appui et le reconfort dont vous<br /> pourrez avoir besoin.</p>
+        </div>
+    </div>
+    <footer class="mt-5 py-5">
+        <hr />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="logo.png" alt="Hallo Docteur" id="logo">
+                    <div class="medias d-flex mt-4 mx-auto">
+                        <a href="https://m.facebook.com/HALLO-Docteur-102558741791085/"><img src="../src/fonts/facebook.svg" alt="Facebook" class="ml-4 media-icon"></a>
+                        <a href="#"><img src="../src/fonts/twitter.svg" alt="Twitter" class="ml-4 media-icon"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <h2 class="ml-5">Services</h2>
+                    <ul class="mt-3">
+                        <li>
+                            <a href="#"><img src="../src/fonts/arrow.png">Traumotologie</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../src/fonts/arrow.png">Gynécologie</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../src/fonts/arrow.png">Pédiatrie</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../src/fonts/arrow.png">Cardiologie</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <h2 class="ml-5">Contacts</h2>
+                    <ul class="mt-3">
+                        <li><img src="../src/fonts/call.png" class="contact-icon"><span>+226 70047327/68021741</span></li>
+                        <li><img src="../src/fonts/location_pin.png" class="contact-icon"><span>01 BP 717 Ouagadougou 01 (BF)</span></li>
+                        <li><img src="../src/fonts/email.png" class="contact-icon"><span>hallodocteur.sante@gmail.com</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../src/scripts/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../src/scripts/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../src/scripts/app.js"></script>
+</body>
+</html>
