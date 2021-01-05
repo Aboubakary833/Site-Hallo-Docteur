@@ -66,9 +66,9 @@ export default class AppHeader extends HTMLElement {
                     </div>
                       <div class="col-lg-2">
                         <div class="medias">
-                            <a href="#"><img src="${this.getAttribute('icons')}/facebook.svg" alt="Facebook" class="mt-2
+                            <a href="https://m.facebook.com/HALLO-Docteur-102558741791085/"><img src="${this.getAttribute('icons')}/facebook.svg" alt="Facebook" class="mt-2
                               ml-lg-4 ml-md-2 media-icon"></a>
-                            <a href="#"><img src="${this.getAttribute('icons')}/twitter.svg" alt="Twitter" class="mt-2 ml-lg-4 ml-md-3 media-icon"></a>
+                            <a href="https://twitter.com/HalloDocteur"><img src="${this.getAttribute('icons')}/twitter.svg" alt="Twitter" class="mt-2 ml-lg-4 ml-md-3 media-icon"></a>
                         </div>
                       </div>
                 </div>
@@ -203,8 +203,8 @@ export default class AppHeader extends HTMLElement {
         height: auto;
         display: none;
         flex-direction: column;
-        background: #fff;
-        border: 1px solid #eee;
+        background: #eee;
+        border: 1px solid #ddd;
         border-radius: 5px;
         position: absolute;
         z-index: 1;
