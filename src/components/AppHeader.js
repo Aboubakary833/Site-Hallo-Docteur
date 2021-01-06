@@ -56,13 +56,13 @@ export default class AppHeader extends HTMLElement {
                                 <a id="contacts" class="nav-link text-dark font-weight-bolder" href="${this.getAttribute('href5')}">CONTACTS</a>
                               </div>
                             </div>
-                            <form class="form-inline searchbar">
-                                <input type="text" placeholder="Rechercher..." aria-label="Search">
+                            <form method="GET" action="${this.getAttribute('search')}" id="searchbar" class="form-inline searchbar">
+                                <input type="text" id="searchInput" placeholder="Rechercher..." aria-label="Search">
                                 <button type="submit">
                                     <img src="${this.getAttribute('icons')}/search.svg" alt="Rechercher">
                                 </button>
-                              </form>
-                          </nav>
+                            </form>
+                        </nav>
                     </div>
                       <div class="col-lg-2">
                         <div class="medias">
@@ -75,7 +75,48 @@ export default class AppHeader extends HTMLElement {
             </div>
         </div>
     </header>
-        `
+        `;
+        const input = document.querySelector('#searchInput');
+        const appLinks = ['specialites', 'documents', 'services', 'contacts'];
+        const services = ['Consultations', 'Examens', 'Traitements'];
+        const specialites = ['Cardiologie', 'Chirurgie', 'Traumatologie', 'Maternite'];
+        const form = document.querySelector('#searchbar');
+        function evaluate(value) {
+            let pages = document.location.href.indexOf('pages');
+                if(pages > -1 && !value.includes('.html')) {
+                    if(appLinks.includes(value)) {
+                        document.location = `${value}.html`;
+                    } else if(services.includes(value)) {
+                        document.location = `services.html#${value}`;
+                    } else if(specialites.includes(value)) {
+                        document.location = `specialites.html#${value}`;
+                    } else if(value == 'index' || value == 'accueil') {
+                        document.location = `../index.html`;
+                    }
+                } else if (pages > -1 && value.includes('.html')) {
+                        document.location = `${value}`;
+                        if (value == 'index.html') {
+                            document.location = `../index.html`;
+                        }
+                } else if(pages == -1) {
+                    if(appLinks.includes(value)) {
+                        document.location = `pages/${value}.html`;
+                    } else if(services.includes(value)) {
+                        document.location = `pages/services.html#${value}`;
+                    } else if(specialites.includes(value)) {
+                        document.location = `pages/specialites.html#${value}`;
+                    }
+                } else if (pages == 1 && value.includes('.html')) {
+                    document.location = `pages/${value}`;
+                }
+            
+        }
+        form.addEventListener('submit', function (e){
+        e.preventDefault();
+        let val = input.value;
+         evaluate(val);
+        }, false);
+        
     }
     headerStyle() {
         return `

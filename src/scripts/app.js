@@ -4,6 +4,7 @@ $(".hover").mouseleave(
     }
   );
 //Intersection observer
+
 const ratio = .2;
 const opt = {
   root: null,
@@ -21,4 +22,4 @@ const crossing = (entries, observer) => {
 const crossingObserver = new IntersectionObserver(crossing, opt);
 let elements = document.querySelectorAll('.element');
 elements.forEach(el => crossingObserver.observe(el));
-
+console.log(document.location);
