@@ -20,15 +20,15 @@ export default class AppHeader extends HTMLElement {
                     <img src="${this.getAttribute('icons')}/phone.png" alt="Téléphone" class="mx-auto header-icon">
                     <div class="titles_block">
                         <span>+226 70-04-73-27</span><br>
-                        <span>+226 68-02-17-41</span>
+                        <span class="sub_title_hidden_2">+226 68-02-17-41</span>
                     </div>
                 </div>
                 <div class="col-4 col-md-3 d-flex flex-column flex-lg-row text-center mt-4 header-block">
                     <img src="${this.getAttribute('icons')}/pin.png" alt="Localisation" class="mx-auto header-icon">
                     <div class="titles_block">
                         <span>Arrondissement 5</span><br>
-                        <span>Secteur 22</span><br>
-                        <span class="sub_title">Boulevard Charles De Gaulle</span>
+                        <span class="sub_title_hidden_2">Secteur 22</span><br>
+                        <span class="sub_title_hidden_1">Boulevard Charles De Gaulle</span>
                     </div>
                 </div>
             </div>
@@ -218,7 +218,7 @@ export default class AppHeader extends HTMLElement {
             font-size: 12px;
             font-weight: bolder;
         }
-        .titles_block > .sub_title{display: none;}
+        .titles_block > .sub_title_hidden_1{display: none;}
             .header-icon{
             width: 50px;
             height: 50px;
@@ -238,6 +238,7 @@ export default class AppHeader extends HTMLElement {
             width: 35px;
             height: 40px;
         }
+        .sub_title_hidden_2 {display: none;}
     }
     .sublinks_1, .sublinks_2{
         width: auto;
